@@ -14,11 +14,6 @@ jobs:
         uses: actions/checkout@v1
       - name: Switch XCode Version
         run: sudo xcode-select -s /Applications/Xcode_11.2.app
-      - name: List Files
-        run: |
-          ls
-          cd src
-          ls
       - name: Install Dependencies
         run: |
           cd src/EMBER\ Medical;pod install
@@ -27,6 +22,3 @@ jobs:
         run: |
           cd src/EMBER\ Medical
           xcodebuild clean build test -workspace "EMBER Medical.xcworkspace" -scheme "EMBER Medical" -destination "platform=iOS Simulator,OS=13.2,name=iPhone 8" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-        env:
-          scheme: $
-          destination: $
