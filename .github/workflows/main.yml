@@ -16,12 +16,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Dependencies
-        run: pod install
-      - name: Build and test
-        run: bundle exec fastlane scan --destination "${destination}" --scheme "${scheme}"
+      - name: Switch XCode Version
+        run: sudo xcode-select -s /Applications/Xcode_11.2.app
+      - name: Install Dependencies
+        run: |
+          cd src/EMBER Medical/
+          pod install
+        shell: bash
+      - name: Build & Test
+        run: |
+          cd src/EMBER Medical/
+          xcodebuild clean test -project EMBER Medical.xcworkspace -scheme "${scheme}" -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
-          destination: $
           scheme: $
-      - name: Dependencies
-        run: bundle exec pod install
+          destination: $
