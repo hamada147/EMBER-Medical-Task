@@ -22,12 +22,12 @@ jobs:
         run: ls
       - name: Install Dependencies
         run: |
-          cd .src/EMBER Medical/
+          cd src/EMBER Medical
           pod install
         shell: bash
       - name: Build & Test
         run: |
-          cd .src/EMBER Medical/
+          cd src/EMBER Medical
           xcodebuild clean test -project EMBER Medical.xcworkspace -scheme "${scheme}" -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env:
           scheme: $
