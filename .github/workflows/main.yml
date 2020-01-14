@@ -1,1 +1,27 @@
+name: CI
+# This workflow is triggered on pushes to the repository.
+on:
+  pull_request:
+    branches:
+      - develop
+      - feature/*
 
+jobs:
+  build:
+    runs-on: macos
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8', 'platform=iOS Simulator,OS=13.1,name=iPhone 9']
+        scheme: ['EMBER Medical']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Dependencies
+        run: bundle exec pod install
+      - name: Build and test
+        run: bundle exec fastlane scan --destination "${destination}" --scheme "${scheme}"
+        env:
+          destination: $
+          scheme: $
+      - name: Dependencies
+        run: bundle exec pod install
