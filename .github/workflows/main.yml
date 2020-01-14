@@ -22,8 +22,7 @@ jobs:
         run: ls
       - name: Install Dependencies
         run: |
-          cd src/EMBER Medical
-          pod install
+          cd src/EMBER Medical;pod install
         shell: bash
       - name: Build & Test
         run: |
