@@ -11,7 +11,7 @@ jobs:
     runs-on: macos
     strategy:
       matrix:
-        destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8', 'platform=iOS Simulator,OS=13.1,name=iPhone 9']
+        destination: ['platform=iOS Simulator,OS=13.1,name=iPhone 8']
         scheme: ['EMBER Medical']
     steps:
       - name: Checkout
