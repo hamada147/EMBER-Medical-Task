@@ -43,6 +43,16 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B56836FA23CF7B7800073EB4"
+               BuildableName = "ObfuscatorTests.xctest"
+               BlueprintName = "ObfuscatorTests"
+               ReferencedContainer = "container:../Common/Obfuscator/Obfuscator.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "B568368723CF70C900073EB4"
                BuildableName = "NetworkManagerTests.xctest"
                BlueprintName = "NetworkManagerTests"
@@ -57,16 +67,6 @@
                BuildableName = "APIManagerTests.xctest"
                BlueprintName = "APIManagerTests"
                ReferencedContainer = "container:../Common/APIManager/APIManager.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B56836FA23CF7B7800073EB4"
-               BuildableName = "ObfuscatorTests.xctest"
-               BlueprintName = "ObfuscatorTests"
-               ReferencedContainer = "container:../Common/Obfuscator/Obfuscator.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
