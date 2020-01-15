@@ -14,6 +14,12 @@
 		B56836E323CF79D300073EB4 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836E223CF79D300073EB4 /* APIProtocol.swift */; };
 		B56836E523CF7A0E00073EB4 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836E423CF7A0E00073EB4 /* Encodable+Dictionary.swift */; };
 		B56836E723CF7A3200073EB4 /* APIManagerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836E623CF7A3200073EB4 /* APIManagerConfig.swift */; };
+		B568371523CF890D00073EB4 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568371423CF890D00073EB4 /* BaseAPI.swift */; };
+		B568371723CF8C2B00073EB4 /* ErrorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568371623CF8C2B00073EB4 /* ErrorManager.swift */; };
+		B568371A23CF8D4C00073EB4 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568371923CF8D4C00073EB4 /* URLSessionMock.swift */; };
+		B568371C23CF8DBE00073EB4 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568371B23CF8DBE00073EB4 /* URLSessionDataTaskMock.swift */; };
+		B568371E23CF8DDA00073EB4 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568371D23CF8DDA00073EB4 /* MockAPI.swift */; };
+		B568372223CF8EDF00073EB4 /* EmptyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568372123CF8EDF00073EB4 /* EmptyDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,12 @@
 		B56836E223CF79D300073EB4 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
 		B56836E423CF7A0E00073EB4 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
 		B56836E623CF7A3200073EB4 /* APIManagerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerConfig.swift; sourceTree = "<group>"; };
+		B568371423CF890D00073EB4 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		B568371623CF8C2B00073EB4 /* ErrorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorManager.swift; sourceTree = "<group>"; };
+		B568371923CF8D4C00073EB4 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		B568371B23CF8DBE00073EB4 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
+		B568371D23CF8DDA00073EB4 /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
+		B568372123CF8EDF00073EB4 /* EmptyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +102,7 @@
 		B56836D123CF76AA00073EB4 /* APIManagerTests */ = {
 			isa = PBXGroup;
 			children = (
+				B568371823CF8D3A00073EB4 /* Mocks */,
 				B56836D223CF76AA00073EB4 /* APIManagerTests.swift */,
 				B56836D423CF76AA00073EB4 /* Info.plist */,
 			);
@@ -102,6 +115,8 @@
 				B56836E223CF79D300073EB4 /* APIProtocol.swift */,
 				B56836E423CF7A0E00073EB4 /* Encodable+Dictionary.swift */,
 				B56836E623CF7A3200073EB4 /* APIManagerConfig.swift */,
+				B568371623CF8C2B00073EB4 /* ErrorManager.swift */,
+				B568371423CF890D00073EB4 /* BaseAPI.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -110,8 +125,19 @@
 			isa = PBXGroup;
 			children = (
 				B56836E023CF79AB00073EB4 /* InAPPError.swift */,
+				B568372123CF8EDF00073EB4 /* EmptyDTO.swift */,
 			);
 			path = DTO;
+			sourceTree = "<group>";
+		};
+		B568371823CF8D3A00073EB4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				B568371923CF8D4C00073EB4 /* URLSessionMock.swift */,
+				B568371B23CF8DBE00073EB4 /* URLSessionDataTaskMock.swift */,
+				B568371D23CF8DDA00073EB4 /* MockAPI.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,10 +250,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B568372223CF8EDF00073EB4 /* EmptyDTO.swift in Sources */,
+				B568371723CF8C2B00073EB4 /* ErrorManager.swift in Sources */,
 				B56836E723CF7A3200073EB4 /* APIManagerConfig.swift in Sources */,
 				B56836E323CF79D300073EB4 /* APIProtocol.swift in Sources */,
 				B56836E523CF7A0E00073EB4 /* Encodable+Dictionary.swift in Sources */,
 				B56836E123CF79AB00073EB4 /* InAPPError.swift in Sources */,
+				B568371523CF890D00073EB4 /* BaseAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +264,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B568371E23CF8DDA00073EB4 /* MockAPI.swift in Sources */,
+				B568371A23CF8D4C00073EB4 /* URLSessionMock.swift in Sources */,
 				B56836D323CF76AA00073EB4 /* APIManagerTests.swift in Sources */,
+				B568371C23CF8DBE00073EB4 /* URLSessionDataTaskMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
