@@ -10,6 +10,7 @@
 		B56836FC23CF7B7800073EB4 /* Obfuscator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56836F223CF7B7800073EB4 /* Obfuscator.framework */; };
 		B568370123CF7B7800073EB4 /* ObfuscatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568370023CF7B7800073EB4 /* ObfuscatorTests.swift */; };
 		B568370323CF7B7800073EB4 /* Obfuscator.h in Headers */ = {isa = PBXBuildFile; fileRef = B56836F523CF7B7800073EB4 /* Obfuscator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B568370D23CF7BBF00073EB4 /* Obfuscator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568370C23CF7BBF00073EB4 /* Obfuscator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		B56836FB23CF7B7800073EB4 /* ObfuscatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObfuscatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B568370023CF7B7800073EB4 /* ObfuscatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObfuscatorTests.swift; sourceTree = "<group>"; };
 		B568370223CF7B7800073EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B568370C23CF7BBF00073EB4 /* Obfuscator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Obfuscator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				B56836F523CF7B7800073EB4 /* Obfuscator.h */,
 				B56836F623CF7B7800073EB4 /* Info.plist */,
+				B568370C23CF7BBF00073EB4 /* Obfuscator.swift */,
 			);
 			path = Obfuscator;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					B56836F123CF7B7800073EB4 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					B56836FA23CF7B7800073EB4 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B568370D23CF7BBF00073EB4 /* Obfuscator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		B568370723CF7B7800073EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Moussa-Tech.Obfuscator";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		B568370823CF7B7800073EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +394,7 @@
 		B568370A23CF7B7800073EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ObfuscatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +412,7 @@
 		B568370B23CF7B7800073EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ObfuscatorTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
