@@ -22,6 +22,13 @@
 		B568371023CF805A00073EB4 /* APIManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B568370E23CF805A00073EB4 /* APIManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B568371223CF806100073EB4 /* Obfuscator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568371123CF806100073EB4 /* Obfuscator.framework */; };
 		B568371323CF806100073EB4 /* Obfuscator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B568371123CF806100073EB4 /* Obfuscator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B56AE34023CFBFD90092C98B /* RoutersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE33F23CFBFD90092C98B /* RoutersManager.swift */; };
+		B56AE34223CFC01D0092C98B /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE34123CFC01D0092C98B /* Router.swift */; };
+		B56AE34B23CFC1200092C98B /* ErrorNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE34A23CFC1200092C98B /* ErrorNotificationViewController.swift */; };
+		B56AE34D23CFC1540092C98B /* ErrorNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE34C23CFC1540092C98B /* ErrorNotificationViewModel.swift */; };
+		B56AE34F23CFC1800092C98B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE34E23CFC1800092C98B /* BaseViewController.swift */; };
+		B56AE35123CFC1C10092C98B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE35023CFC1C10092C98B /* BaseViewModel.swift */; };
+		B56AE35323CFC1DA0092C98B /* ErrorNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56AE35223CFC1DA0092C98B /* ErrorNotificationViewController.xib */; };
 		EA1269284140873255844B77 /* Pods_EMBER_Medical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4C6864FCA7D7330C42C091 /* Pods_EMBER_Medical.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +79,13 @@
 		B56836B123CF757D00073EB4 /* NetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B568370E23CF805A00073EB4 /* APIManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = APIManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B568371123CF806100073EB4 /* Obfuscator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Obfuscator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B56AE33F23CFBFD90092C98B /* RoutersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutersManager.swift; sourceTree = "<group>"; };
+		B56AE34123CFC01D0092C98B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B56AE34A23CFC1200092C98B /* ErrorNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNotificationViewController.swift; sourceTree = "<group>"; };
+		B56AE34C23CFC1540092C98B /* ErrorNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNotificationViewModel.swift; sourceTree = "<group>"; };
+		B56AE34E23CFC1800092C98B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B56AE35023CFC1C10092C98B /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		B56AE35223CFC1DA0092C98B /* ErrorNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorNotificationViewController.xib; sourceTree = "<group>"; };
 		C4B803F694855A65D4AF7C8E /* Pods-EMBER MedicalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMBER MedicalTests.release.xcconfig"; path = "Target Support Files/Pods-EMBER MedicalTests/Pods-EMBER MedicalTests.release.xcconfig"; sourceTree = "<group>"; };
 		F9DF509BA11A1255CD3267A6 /* Pods-EMBER Medical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMBER Medical.debug.xcconfig"; path = "Target Support Files/Pods-EMBER Medical/Pods-EMBER Medical.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +147,9 @@
 		B568364E23CE217100073EB4 /* EMBER Medical */ = {
 			isa = PBXGroup;
 			children = (
+				B56AE34623CFC1000092C98B /* Screens */,
+				B56AE34523CFC0E60092C98B /* Utilities */,
+				B56AE33E23CFBFCC0092C98B /* Router */,
 				B568367423CE21B200073EB4 /* EMBER Medical.entitlements */,
 				B568364F23CE217100073EB4 /* AppDelegate.swift */,
 				B568365123CE217100073EB4 /* SceneDelegate.swift */,
@@ -153,6 +170,58 @@
 				B568366B23CE217500073EB4 /* Info.plist */,
 			);
 			path = "EMBER MedicalTests";
+			sourceTree = "<group>";
+		};
+		B56AE33E23CFBFCC0092C98B /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				B56AE33F23CFBFD90092C98B /* RoutersManager.swift */,
+				B56AE34123CFC01D0092C98B /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		B56AE34523CFC0E60092C98B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B56AE34E23CFC1800092C98B /* BaseViewController.swift */,
+				B56AE35023CFC1C10092C98B /* BaseViewModel.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B56AE34623CFC1000092C98B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B56AE34723CFC1080092C98B /* Common */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B56AE34723CFC1080092C98B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B56AE34823CFC1110092C98B /* Error Notification */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B56AE34823CFC1110092C98B /* Error Notification */ = {
+			isa = PBXGroup;
+			children = (
+				B56AE34923CFC1170092C98B /* views */,
+				B56AE34C23CFC1540092C98B /* ErrorNotificationViewModel.swift */,
+			);
+			path = "Error Notification";
+			sourceTree = "<group>";
+		};
+		B56AE34923CFC1170092C98B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B56AE34A23CFC1200092C98B /* ErrorNotificationViewController.swift */,
+				B56AE35223CFC1DA0092C98B /* ErrorNotificationViewController.xib */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		C33FD6B813B10BDB2F25D4B8 /* Frameworks */ = {
@@ -251,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56AE35323CFC1DA0092C98B /* ErrorNotificationViewController.xib in Resources */,
 				B568365F23CE217400073EB4 /* LaunchScreen.storyboard in Resources */,
 				B568365C23CE217400073EB4 /* Assets.xcassets in Resources */,
 				B568365723CE217100073EB4 /* Main.storyboard in Resources */,
@@ -318,9 +388,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56AE34D23CFC1540092C98B /* ErrorNotificationViewModel.swift in Sources */,
+				B56AE35123CFC1C10092C98B /* BaseViewModel.swift in Sources */,
+				B56AE34023CFBFD90092C98B /* RoutersManager.swift in Sources */,
 				B568365423CE217100073EB4 /* ViewController.swift in Sources */,
 				B568365023CE217100073EB4 /* AppDelegate.swift in Sources */,
+				B56AE34B23CFC1200092C98B /* ErrorNotificationViewController.swift in Sources */,
+				B56AE34F23CFC1800092C98B /* BaseViewController.swift in Sources */,
 				B568365223CE217100073EB4 /* SceneDelegate.swift in Sources */,
+				B56AE34223CFC01D0092C98B /* Router.swift in Sources */,
 				B568365A23CE217100073EB4 /* EMBER_Medical.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
