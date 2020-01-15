@@ -8,14 +8,14 @@
 
 import Foundation
 
-class Obfuscator {
+public class Obfuscator {
     
     // MARK: - Variables
     private var salt: String
     
     // MARK: - Initialization
     init() {
-        self.salt = "\(String(describing: AppDelegate.self))\(String(describing: NSObject.self))"
+        self.salt = "\(String(describing: Obfuscator.self))\(String(describing: NSObject.self))"
     }
     
     init(with salt: String) {

@@ -18,17 +18,19 @@ class ObfuscatorTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func test_encryption() {
+        let obf = Obfuscator.init()
+        let expected: [UInt8] = [7, 7, 10, 25, 28, 67, 54, 27, 29, 30, 42]
+        let restultToTest = obf.bytesByObfuscatingString(string: "Hello World")
+        XCTAssert(restultToTest == expected)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_decryption() {
+        let obf = Obfuscator.init()
+        let expected: String = "Hello World"
+        let key: [UInt8] = [7, 7, 10, 25, 28, 67, 54, 27, 29, 30, 42]
+        let restultToTest = obf.reveal(key: key)
+        XCTAssert(restultToTest == expected)
     }
-
 }

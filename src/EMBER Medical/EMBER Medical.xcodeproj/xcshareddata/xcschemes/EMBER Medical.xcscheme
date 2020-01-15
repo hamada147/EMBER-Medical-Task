@@ -26,7 +26,8 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      codeCoverageEnabled = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
@@ -36,6 +37,36 @@
                BuildableName = "EMBER MedicalTests.xctest"
                BlueprintName = "EMBER MedicalTests"
                ReferencedContainer = "container:EMBER Medical.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B568368723CF70C900073EB4"
+               BuildableName = "NetworkManagerTests.xctest"
+               BlueprintName = "NetworkManagerTests"
+               ReferencedContainer = "container:../Common/NetworkManager/NetworkManager.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B56836CC23CF76AA00073EB4"
+               BuildableName = "APIManagerTests.xctest"
+               BlueprintName = "APIManagerTests"
+               ReferencedContainer = "container:../Common/APIManager/APIManager.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B56836FA23CF7B7800073EB4"
+               BuildableName = "ObfuscatorTests.xctest"
+               BlueprintName = "ObfuscatorTests"
+               ReferencedContainer = "container:../Common/Obfuscator/Obfuscator.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
