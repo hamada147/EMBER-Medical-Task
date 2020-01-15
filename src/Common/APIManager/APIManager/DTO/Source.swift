@@ -9,17 +9,18 @@
 import Foundation
 
 public class Source: Codable, Equatable {
-    public let id, name, sourceDescription, url: String
-    public let language: Language
-    public let country: Country
-    public let category: Category
+    public let name: String
+    public let id, sourceDescription, url: String?
+    public let language: Language?
+    public let country: Country?
+    public let category: Category?
 
     enum CodingKeys: String, CodingKey {
         case id, name, url, category, language, country
         case sourceDescription = "description"
     }
 
-    public init(id: String, name: String, sourceDescription: String, url: String, category: Category, language: Language, country: Country) {
+    public init(id: String, name: String, sourceDescription: String?, url: String?, category: Category?, language: Language?, country: Country?) {
         self.id = id
         self.name = name
         self.sourceDescription = sourceDescription

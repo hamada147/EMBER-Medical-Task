@@ -28,7 +28,11 @@
 		B568372F23CF9FC100073EB4 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568372E23CF9FC100073EB4 /* BaseResponse.swift */; };
 		B568373123CFA3BB00073EB4 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568373023CFA3BB00073EB4 /* Language.swift */; };
 		B568373323CFAB7C00073EB4 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568373223CFAB7C00073EB4 /* Country.swift */; };
-		B568373523CFAE5200073EB4 /* GetTopHeadlines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568373423CFAE5200073EB4 /* GetTopHeadlines.swift */; };
+		B568373523CFAE5200073EB4 /* GetTopHeadlinesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568373423CFAE5200073EB4 /* GetTopHeadlinesAPI.swift */; };
+		B56AE33023CFB8260092C98B /* GetTopHeadlinesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE32F23CFB8260092C98B /* GetTopHeadlinesRequest.swift */; };
+		B56AE33223CFB8390092C98B /* GetTopHeadlinesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE33123CFB8390092C98B /* GetTopHeadlinesResponse.swift */; };
+		B56AE33423CFB8590092C98B /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE33323CFB8590092C98B /* Article.swift */; };
+		B56AE33623CFB8DB0092C98B /* GetSourcesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE33523CFB8DB0092C98B /* GetSourcesRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +70,11 @@
 		B568372E23CF9FC100073EB4 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		B568373023CFA3BB00073EB4 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
 		B568373223CFAB7C00073EB4 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
-		B568373423CFAE5200073EB4 /* GetTopHeadlines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopHeadlines.swift; sourceTree = "<group>"; };
+		B568373423CFAE5200073EB4 /* GetTopHeadlinesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopHeadlinesAPI.swift; sourceTree = "<group>"; };
+		B56AE32F23CFB8260092C98B /* GetTopHeadlinesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopHeadlinesRequest.swift; sourceTree = "<group>"; };
+		B56AE33123CFB8390092C98B /* GetTopHeadlinesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopHeadlinesResponse.swift; sourceTree = "<group>"; };
+		B56AE33323CFB8590092C98B /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		B56AE33523CFB8DB0092C98B /* GetSourcesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSourcesRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,13 +151,12 @@
 		B56836DF23CF799600073EB4 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
+				B5E8C2AB23CFB317003225A4 /* StaticValues */,
 				B56836E023CF79AB00073EB4 /* InAPPError.swift */,
 				B568372123CF8EDF00073EB4 /* EmptyDTO.swift */,
 				B568372423CF98BB00073EB4 /* APIErrorDTO.swift */,
-				B568372A23CF9F5000073EB4 /* Category.swift */,
-				B568373223CFAB7C00073EB4 /* Country.swift */,
-				B568373023CFA3BB00073EB4 /* Language.swift */,
 				B568372C23CF9F6200073EB4 /* Source.swift */,
+				B56AE33323CFB8590092C98B /* Article.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -168,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				B568373723CFAF1200073EB4 /* Base */,
+				B5E8C2AC23CFB340003225A4 /* GetTopHeadlines */,
 				B568373623CFAF0500073EB4 /* GetSources */,
-				B568373423CFAE5200073EB4 /* GetTopHeadlines.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				B568372623CF9CF100073EB4 /* GetSourcesAPI.swift */,
+				B56AE33523CFB8DB0092C98B /* GetSourcesRequest.swift */,
 				B568372823CF9D0200073EB4 /* SourcesResponse.swift */,
 			);
 			path = GetSources;
@@ -189,6 +197,26 @@
 				B568372E23CF9FC100073EB4 /* BaseResponse.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		B5E8C2AB23CFB317003225A4 /* StaticValues */ = {
+			isa = PBXGroup;
+			children = (
+				B568372A23CF9F5000073EB4 /* Category.swift */,
+				B568373223CFAB7C00073EB4 /* Country.swift */,
+				B568373023CFA3BB00073EB4 /* Language.swift */,
+			);
+			path = StaticValues;
+			sourceTree = "<group>";
+		};
+		B5E8C2AC23CFB340003225A4 /* GetTopHeadlines */ = {
+			isa = PBXGroup;
+			children = (
+				B568373423CFAE5200073EB4 /* GetTopHeadlinesAPI.swift */,
+				B56AE32F23CFB8260092C98B /* GetTopHeadlinesRequest.swift */,
+				B56AE33123CFB8390092C98B /* GetTopHeadlinesResponse.swift */,
+			);
+			path = GetTopHeadlines;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,15 +329,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B568373523CFAE5200073EB4 /* GetTopHeadlines.swift in Sources */,
+				B568373523CFAE5200073EB4 /* GetTopHeadlinesAPI.swift in Sources */,
 				B568372723CF9CF100073EB4 /* GetSourcesAPI.swift in Sources */,
 				B568372223CF8EDF00073EB4 /* EmptyDTO.swift in Sources */,
 				B568371723CF8C2B00073EB4 /* ErrorManager.swift in Sources */,
 				B568373123CFA3BB00073EB4 /* Language.swift in Sources */,
+				B56AE33223CFB8390092C98B /* GetTopHeadlinesResponse.swift in Sources */,
 				B56836E723CF7A3200073EB4 /* APIManagerConfig.swift in Sources */,
+				B56AE33623CFB8DB0092C98B /* GetSourcesRequest.swift in Sources */,
+				B56AE33023CFB8260092C98B /* GetTopHeadlinesRequest.swift in Sources */,
 				B56836E323CF79D300073EB4 /* APIProtocol.swift in Sources */,
 				B56836E523CF7A0E00073EB4 /* Encodable+Dictionary.swift in Sources */,
 				B56836E123CF79AB00073EB4 /* InAPPError.swift in Sources */,
+				B56AE33423CFB8590092C98B /* Article.swift in Sources */,
 				B568371523CF890D00073EB4 /* BaseAPI.swift in Sources */,
 				B568372D23CF9F6200073EB4 /* Source.swift in Sources */,
 				B568372523CF98BB00073EB4 /* APIErrorDTO.swift in Sources */,

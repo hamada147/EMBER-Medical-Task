@@ -34,11 +34,11 @@ public class BaseAPI<RequestModel: Codable, ResponseModel: Codable, APIErrorResp
         self.onAPIError = onAPIError
         self.onConnectionError = onConnectionError
         self.onParsingError = onParsingError
-        self.paramEncoder = JSONParameterEncoder()
+        self.paramEncoder = URLParameterEncoder()
         self.session = URLSession.shared
     }
     
-    public init (requestDTO: RequestModel?, onSuccess: ((ResponseModel?) -> Void)?, onAPIError: ((APIErrorResponse) -> Void)?, onConnectionError: ((InAPPError) -> Void)?, onParsingError: ((Error) -> Void)?, paramEncoder: ParameterEncoder = JSONParameterEncoder(), session: URLSession = URLSession.shared) {
+    public init (requestDTO: RequestModel?, onSuccess: ((ResponseModel?) -> Void)?, onAPIError: ((APIErrorResponse) -> Void)?, onConnectionError: ((InAPPError) -> Void)?, onParsingError: ((Error) -> Void)?, paramEncoder: ParameterEncoder = URLParameterEncoder(), session: URLSession = URLSession.shared) {
         self.requestDTO = requestDTO
         self.onSuccess = onSuccess
         self.onAPIError = onAPIError

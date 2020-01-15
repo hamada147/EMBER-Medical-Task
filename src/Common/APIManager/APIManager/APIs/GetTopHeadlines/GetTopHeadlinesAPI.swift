@@ -1,5 +1,5 @@
 //
-//  GetSourcesAPI.swift
+//  GetTopHeadlinesAPI.swift
 //  APIManager
 //
 //  Created by Ahmed Moussa on 1/15/20.
@@ -9,11 +9,11 @@
 import Foundation
 import NetworkManager
 
-public class GetSourcesAPI: BaseAPI<EmptyDTO, SourcesResponse, APIErrorDTO> {
+public class GetTopHeadlinesAPI: BaseAPI<GetTopHeadlinesRequest, GetTopHeadlinesResponse, EmptyDTO> {
     
     override var httpMethod: HTTPMethod { return .get }
     
     override var relativeApiPath: String {
-        return "sources"
+        return "top-headlines"
     }
 }
