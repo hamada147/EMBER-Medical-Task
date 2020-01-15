@@ -21,7 +21,7 @@ public class BaseAPI<RequestModel: Codable, ResponseModel: Codable, APIErrorResp
     
     // MARK:- Configurations
     // NOTE: To be overriden if needed
-    var httpHeaderFields: [String : String] { return ["Content-Type": "application/json"] }
+    var httpHeaderFields: [String : String] { return [:] }
     // NOTE: To be overriden if needed
     var httpMethod: HTTPMethod { return .post }
     // NOTE: To be overriden if needed
