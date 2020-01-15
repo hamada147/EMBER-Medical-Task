@@ -8,22 +8,21 @@
 
 import Foundation
 
-public class GetEverythingRequest: Codable, Equatable {
-    // Keywords or phrases to search for in the article title and body.
-    public var q: String?
+public class GetEverythingRequest: BaseArticleRequest {
     // Keywords or phrases to search for in the article title only.
     public var qInTitle: String?
-    // A comma-seperated string of identifiers for the news sources or blogs you want headlines from.
-    public var sources: String?
     
-    public init(q: String?, qInTitle: String?, sources: String?) {
-        self.q = q
+    public init(q: String?, sources: String?, qInTitle: String?) {
         self.qInTitle = qInTitle
-        self.sources = sources
+        super.init(sources: sources, q: q)
+    }
+    
+    required public init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
     
     public static func == (lhs: GetEverythingRequest, rhs: GetEverythingRequest) -> Bool {
-        if (lhs.q == rhs.q && lhs.qInTitle == rhs.qInTitle && lhs.sources == rhs.sources) {
+        if (lhs.q == rhs.q && lhs.sources == rhs.sources && lhs.qInTitle == rhs.qInTitle) {
             return true
         } else {
             return false

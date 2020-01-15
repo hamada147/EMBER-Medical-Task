@@ -9,7 +9,7 @@
 import Foundation
 import NetworkManager
 
-public class GetTopHeadlinesAPI: BaseAPI<GetTopHeadlinesRequest, GetTopHeadlinesResponse, EmptyDTO> {
+public class GetTopHeadlinesAPI: BaseAPI<GetTopHeadlinesRequest, GetArticlesResponse, EmptyDTO> {
     
     override var httpMethod: HTTPMethod { return .get }
     

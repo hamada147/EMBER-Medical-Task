@@ -22,7 +22,7 @@ public class GetArticlesResponse: BaseResponse {
         super.init(status: status)
     }
     
-    public static func == (lhs: GetTopHeadlinesResponse, rhs: GetTopHeadlinesResponse) -> Bool {
+    public static func == (lhs: GetArticlesResponse, rhs: GetArticlesResponse) -> Bool {
         if (lhs.status == rhs.status && lhs.totalResults == rhs.totalResults && lhs.articles.count == rhs.articles.count) {
             for item in lhs.articles {
                 if (!rhs.articles.contains(item)) {

@@ -35,6 +35,7 @@
 		B56AE33623CFB8DB0092C98B /* GetSourcesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE33523CFB8DB0092C98B /* GetSourcesRequest.swift */; };
 		B56AE33923CFB9C40092C98B /* GetEverythingAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE33823CFB9C40092C98B /* GetEverythingAPI.swift */; };
 		B56AE33B23CFBB1D0092C98B /* GetEverythingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE33A23CFBB1D0092C98B /* GetEverythingRequest.swift */; };
+		B56AE33D23CFBC250092C98B /* BaseArticleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE33C23CFBC250092C98B /* BaseArticleRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		B56AE33523CFB8DB0092C98B /* GetSourcesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSourcesRequest.swift; sourceTree = "<group>"; };
 		B56AE33823CFB9C40092C98B /* GetEverythingAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEverythingAPI.swift; sourceTree = "<group>"; };
 		B56AE33A23CFBB1D0092C98B /* GetEverythingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEverythingRequest.swift; sourceTree = "<group>"; };
+		B56AE33C23CFBC250092C98B /* BaseArticleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseArticleRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +203,7 @@
 			children = (
 				B568372E23CF9FC100073EB4 /* BaseResponse.swift */,
 				B56AE33123CFB8390092C98B /* GetArticlesResponse.swift */,
+				B56AE33C23CFBC250092C98B /* BaseArticleRequest.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				B56836E523CF7A0E00073EB4 /* Encodable+Dictionary.swift in Sources */,
 				B56836E123CF79AB00073EB4 /* InAPPError.swift in Sources */,
 				B56AE33423CFB8590092C98B /* Article.swift in Sources */,
+				B56AE33D23CFBC250092C98B /* BaseArticleRequest.swift in Sources */,
 				B568371523CF890D00073EB4 /* BaseAPI.swift in Sources */,
 				B56AE33923CFB9C40092C98B /* GetEverythingAPI.swift in Sources */,
 				B568372D23CF9F6200073EB4 /* Source.swift in Sources */,

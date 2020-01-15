@@ -16,7 +16,7 @@ public class SourcesResponse: BaseResponse {
         super.init(status: status)
     }
     
-    required init(from decoder: Decoder) throws {
+    required public init(from decoder: Decoder) throws {
         fatalError("init(from:) has not been implemented")
     }
     

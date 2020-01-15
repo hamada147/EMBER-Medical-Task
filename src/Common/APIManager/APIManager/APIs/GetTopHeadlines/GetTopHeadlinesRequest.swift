@@ -8,28 +8,29 @@
 
 import Foundation
 
-public class GetTopHeadlinesRequest: Codable, Equatable {
+public class GetTopHeadlinesRequest: BaseArticleRequest {
     public var country: Country?
     public var category: Category?
-    // A comma-seperated string of identifiers for the news sources or blogs you want headlines from.
     // Note: you can't mix this param with the country or category params.
-    public var sources: String?
-    public var q: String?
+    // sources
     // 20 is the default, 100 is the maximum
     public var pageSize: Int = 20
     public var page: Int = 1
     
-    public init(country: Country?, category: Category?, sources: String?, q: String?, pageSize: Int = 20, page: Int = 1) {
+    public init(sources: String?, q: String?, country: Country?, category: Category?, pageSize: Int = 20, page: Int = 1) {
         self.country = country
         self.category = category
-        self.sources = sources
-        self.q = q
         self.pageSize = pageSize
         self.page = page
+        super.init(sources: sources, q: q)
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
     
     public static func == (lhs: GetTopHeadlinesRequest, rhs: GetTopHeadlinesRequest) -> Bool {
-        if (lhs.country == rhs.country && lhs.category == rhs.category && lhs.sources == rhs.sources && lhs.q == rhs.q && lhs.pageSize == rhs.pageSize && lhs.page == rhs.page) {
+        if (lhs.q == rhs.q && lhs.sources == rhs.sources && lhs.country == rhs.country && lhs.category == rhs.category && lhs.pageSize == rhs.pageSize && lhs.page == rhs.page) {
           return true
         } else {
             return false
