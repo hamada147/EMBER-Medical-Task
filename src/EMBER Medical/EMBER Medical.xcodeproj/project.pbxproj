@@ -16,6 +16,8 @@
 		B568365C23CE217400073EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B568365B23CE217400073EB4 /* Assets.xcassets */; };
 		B568365F23CE217400073EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B568365D23CE217400073EB4 /* LaunchScreen.storyboard */; };
 		B568366A23CE217500073EB4 /* EMBER_MedicalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568366923CE217500073EB4 /* EMBER_MedicalTests.swift */; };
+		B56836B223CF757D00073EB4 /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56836B123CF757D00073EB4 /* NetworkManager.framework */; };
+		B56836B323CF757D00073EB4 /* NetworkManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B56836B123CF757D00073EB4 /* NetworkManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA1269284140873255844B77 /* Pods_EMBER_Medical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4C6864FCA7D7330C42C091 /* Pods_EMBER_Medical.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,20 @@
 			remoteInfo = "EMBER Medical";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B56836B423CF757D00073EB4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B56836B323CF757D00073EB4 /* NetworkManager.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0E4C6864FCA7D7330C42C091 /* Pods_EMBER_Medical.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMBER_Medical.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +63,7 @@
 		B568366923CE217500073EB4 /* EMBER_MedicalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EMBER_MedicalTests.swift; sourceTree = "<group>"; };
 		B568366B23CE217500073EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B568367423CE21B200073EB4 /* EMBER Medical.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "EMBER Medical.entitlements"; sourceTree = "<group>"; };
+		B56836B123CF757D00073EB4 /* NetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B803F694855A65D4AF7C8E /* Pods-EMBER MedicalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMBER MedicalTests.release.xcconfig"; path = "Target Support Files/Pods-EMBER MedicalTests/Pods-EMBER MedicalTests.release.xcconfig"; sourceTree = "<group>"; };
 		F9DF509BA11A1255CD3267A6 /* Pods-EMBER Medical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMBER Medical.debug.xcconfig"; path = "Target Support Files/Pods-EMBER Medical/Pods-EMBER Medical.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA1269284140873255844B77 /* Pods_EMBER_Medical.framework in Frameworks */,
+				B56836B223CF757D00073EB4 /* NetworkManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,7 +97,6 @@
 				AAFC06A1A5DD671AE83EED34 /* Pods-EMBER MedicalTests.debug.xcconfig */,
 				C4B803F694855A65D4AF7C8E /* Pods-EMBER MedicalTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,6 +148,7 @@
 		C33FD6B813B10BDB2F25D4B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B56836B123CF757D00073EB4 /* NetworkManager.framework */,
 				0E4C6864FCA7D7330C42C091 /* Pods_EMBER_Medical.framework */,
 				560DAB72A434E404E0FE83D5 /* Pods_EMBER_MedicalTests.framework */,
 			);
@@ -148,6 +166,7 @@
 				B568364823CE217100073EB4 /* Sources */,
 				B568364923CE217100073EB4 /* Frameworks */,
 				B568364A23CE217100073EB4 /* Resources */,
+				B56836B423CF757D00073EB4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
