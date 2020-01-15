@@ -10,6 +10,10 @@
 		B56836CE23CF76AA00073EB4 /* APIManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56836C423CF76AA00073EB4 /* APIManager.framework */; };
 		B56836D323CF76AA00073EB4 /* APIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836D223CF76AA00073EB4 /* APIManagerTests.swift */; };
 		B56836D523CF76AA00073EB4 /* APIManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B56836C723CF76AA00073EB4 /* APIManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B56836E123CF79AB00073EB4 /* InAPPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836E023CF79AB00073EB4 /* InAPPError.swift */; };
+		B56836E323CF79D300073EB4 /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836E223CF79D300073EB4 /* APIProtocol.swift */; };
+		B56836E523CF7A0E00073EB4 /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836E423CF7A0E00073EB4 /* Encodable+Dictionary.swift */; };
+		B56836E723CF7A3200073EB4 /* APIManagerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836E623CF7A3200073EB4 /* APIManagerConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		B56836CD23CF76AA00073EB4 /* APIManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B56836D223CF76AA00073EB4 /* APIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerTests.swift; sourceTree = "<group>"; };
 		B56836D423CF76AA00073EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B56836E023CF79AB00073EB4 /* InAPPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InAPPError.swift; sourceTree = "<group>"; };
+		B56836E223CF79D300073EB4 /* APIProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProtocol.swift; sourceTree = "<group>"; };
+		B56836E423CF7A0E00073EB4 /* Encodable+Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Dictionary.swift"; sourceTree = "<group>"; };
+		B56836E623CF7A3200073EB4 /* APIManagerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManagerConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,8 @@
 		B56836C623CF76AA00073EB4 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				B56836DF23CF799600073EB4 /* DTO */,
+				B56836DE23CF795300073EB4 /* Base */,
 				B56836C723CF76AA00073EB4 /* APIManager.h */,
 				B56836C823CF76AA00073EB4 /* Info.plist */,
 			);
@@ -84,6 +94,24 @@
 				B56836D423CF76AA00073EB4 /* Info.plist */,
 			);
 			path = APIManagerTests;
+			sourceTree = "<group>";
+		};
+		B56836DE23CF795300073EB4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B56836E223CF79D300073EB4 /* APIProtocol.swift */,
+				B56836E423CF7A0E00073EB4 /* Encodable+Dictionary.swift */,
+				B56836E623CF7A3200073EB4 /* APIManagerConfig.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B56836DF23CF799600073EB4 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				B56836E023CF79AB00073EB4 /* InAPPError.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +176,7 @@
 				TargetAttributes = {
 					B56836C323CF76AA00073EB4 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					B56836CC23CF76AA00073EB4 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56836E723CF7A3200073EB4 /* APIManagerConfig.swift in Sources */,
+				B56836E323CF79D300073EB4 /* APIProtocol.swift in Sources */,
+				B56836E523CF7A0E00073EB4 /* Encodable+Dictionary.swift in Sources */,
+				B56836E123CF79AB00073EB4 /* InAPPError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +373,7 @@
 		B56836D923CF76AA00073EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -355,6 +389,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Moussa-Tech.APIManager";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +398,7 @@
 		B56836DA23CF76AA00073EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -386,6 +422,7 @@
 		B56836DC23CF76AA00073EB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = APIManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -403,6 +440,7 @@
 		B56836DD23CF76AA00073EB4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = APIManagerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
