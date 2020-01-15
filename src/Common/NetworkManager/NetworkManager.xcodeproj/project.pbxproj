@@ -11,6 +11,9 @@
 		B568368E23CF70C900073EB4 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568368D23CF70C900073EB4 /* NetworkManagerTests.swift */; };
 		B568369023CF70C900073EB4 /* NetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B568368223CF70C900073EB4 /* NetworkManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B568369B23CF70E800073EB4 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568369A23CF70E800073EB4 /* Interceptor.swift */; };
+		B568369F23CF714000073EB4 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568369E23CF714000073EB4 /* ParameterEncoder.swift */; };
+		B56836A123CF716600073EB4 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836A023CF716600073EB4 /* JSONParameterEncoder.swift */; };
+		B56836A323CF717C00073EB4 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836A223CF717C00073EB4 /* URLParameterEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,9 @@
 		B568368D23CF70C900073EB4 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
 		B568368F23CF70C900073EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B568369A23CF70E800073EB4 /* Interceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
+		B568369E23CF714000073EB4 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		B56836A023CF716600073EB4 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		B56836A223CF717C00073EB4 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 		B568369C23CF70F900073EB4 /* Encoder */ = {
 			isa = PBXGroup;
 			children = (
+				B568369E23CF714000073EB4 /* ParameterEncoder.swift */,
+				B56836A023CF716600073EB4 /* JSONParameterEncoder.swift */,
+				B56836A223CF717C00073EB4 /* URLParameterEncoder.swift */,
 			);
 			path = Encoder;
 			sourceTree = "<group>";
@@ -215,7 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56836A323CF717C00073EB4 /* URLParameterEncoder.swift in Sources */,
+				B568369F23CF714000073EB4 /* ParameterEncoder.swift in Sources */,
 				B568369B23CF70E800073EB4 /* Interceptor.swift in Sources */,
+				B56836A123CF716600073EB4 /* JSONParameterEncoder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
