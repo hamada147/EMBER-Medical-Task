@@ -18,6 +18,7 @@
 		B56836A923CF735F00073EB4 /* URLSession+Synchronous.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836A823CF735F00073EB4 /* URLSession+Synchronous.swift */; };
 		B56836AB23CF738200073EB4 /* URLRequestExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836AA23CF738200073EB4 /* URLRequestExecuter.swift */; };
 		B56836AD23CF739700073EB4 /* URLSessionRequestExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836AC23CF739700073EB4 /* URLSessionRequestExecuter.swift */; };
+		B56836B023CF73F200073EB4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836AF23CF73F200073EB4 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		B56836A823CF735F00073EB4 /* URLSession+Synchronous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Synchronous.swift"; sourceTree = "<group>"; };
 		B56836AA23CF738200073EB4 /* URLRequestExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExecuter.swift; sourceTree = "<group>"; };
 		B56836AC23CF739700073EB4 /* URLSessionRequestExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionRequestExecuter.swift; sourceTree = "<group>"; };
+		B56836AF23CF73F200073EB4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		B568368123CF70C900073EB4 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				B56836AE23CF73E300073EB4 /* Network Error */,
 				B56836A723CF735200073EB4 /* URL */,
 				B56836A423CF731C00073EB4 /* Request Config */,
 				B568369C23CF70F900073EB4 /* Encoder */,
@@ -140,6 +143,14 @@
 				B56836AC23CF739700073EB4 /* URLSessionRequestExecuter.swift */,
 			);
 			path = URL;
+			sourceTree = "<group>";
+		};
+		B56836AE23CF73E300073EB4 /* Network Error */ = {
+			isa = PBXGroup;
+			children = (
+				B56836AF23CF73F200073EB4 /* NetworkError.swift */,
+			);
+			path = "Network Error";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 				B568369F23CF714000073EB4 /* ParameterEncoder.swift in Sources */,
 				B56836AB23CF738200073EB4 /* URLRequestExecuter.swift in Sources */,
 				B568369B23CF70E800073EB4 /* Interceptor.swift in Sources */,
+				B56836B023CF73F200073EB4 /* NetworkError.swift in Sources */,
 				B56836A123CF716600073EB4 /* JSONParameterEncoder.swift in Sources */,
 				B56836AD23CF739700073EB4 /* URLSessionRequestExecuter.swift in Sources */,
 			);
