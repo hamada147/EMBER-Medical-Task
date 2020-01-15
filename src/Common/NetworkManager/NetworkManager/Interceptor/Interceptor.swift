@@ -10,5 +10,5 @@ import Foundation
 
 public protocol Interceptor {
     func intercept(request: URLRequest) -> URLRequest
-    func intercept(response: URLResponse, data: Data) -> Data?
+    func intercept(data: Data, response: URLResponse) -> Data?
 }
