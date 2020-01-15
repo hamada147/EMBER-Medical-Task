@@ -1,5 +1,5 @@
 //
-//  GetTopHeadlinesResponse.swift
+//  GetArticlesResponse.swift
 //  APIManager
 //
 //  Created by Ahmed Moussa on 1/15/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class GetTopHeadlinesResponse: BaseResponse {
+public class GetArticlesResponse: BaseResponse {
     public let totalResults: Int
     public let articles: [Article]
 

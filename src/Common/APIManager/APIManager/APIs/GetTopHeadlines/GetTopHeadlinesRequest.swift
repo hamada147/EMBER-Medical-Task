@@ -9,15 +9,15 @@
 import Foundation
 
 public class GetTopHeadlinesRequest: Codable, Equatable {
-    var country: Country?
-    var category: Category?
+    public var country: Country?
+    public var category: Category?
     // A comma-seperated string of identifiers for the news sources or blogs you want headlines from.
     // Note: you can't mix this param with the country or category params.
-    var sources: String?
-    var q: String?
+    public var sources: String?
+    public var q: String?
     // 20 is the default, 100 is the maximum
-    var pageSize: Int = 20
-    var page: Int = 1
+    public var pageSize: Int = 20
+    public var page: Int = 1
     
     public init(country: Country?, category: Category?, sources: String?, q: String?, pageSize: Int = 20, page: Int = 1) {
         self.country = country

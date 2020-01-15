@@ -9,8 +9,8 @@
 import Foundation
 
 public class GetSourcesRequest: Codable, Equatable {
-    var language: Language?
-    var country: Country?
+    public var language: Language?
+    public var country: Country?
     
     public init(language: Language?, country: Country?) {
         self.language = language
