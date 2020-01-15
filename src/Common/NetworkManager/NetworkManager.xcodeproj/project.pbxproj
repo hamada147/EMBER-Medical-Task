@@ -15,6 +15,9 @@
 		B56836A123CF716600073EB4 /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836A023CF716600073EB4 /* JSONParameterEncoder.swift */; };
 		B56836A323CF717C00073EB4 /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836A223CF717C00073EB4 /* URLParameterEncoder.swift */; };
 		B56836A623CF732700073EB4 /* RequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836A523CF732700073EB4 /* RequestConfig.swift */; };
+		B56836A923CF735F00073EB4 /* URLSession+Synchronous.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836A823CF735F00073EB4 /* URLSession+Synchronous.swift */; };
+		B56836AB23CF738200073EB4 /* URLRequestExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836AA23CF738200073EB4 /* URLRequestExecuter.swift */; };
+		B56836AD23CF739700073EB4 /* URLSessionRequestExecuter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56836AC23CF739700073EB4 /* URLSessionRequestExecuter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,9 @@
 		B56836A023CF716600073EB4 /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
 		B56836A223CF717C00073EB4 /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		B56836A523CF732700073EB4 /* RequestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfig.swift; sourceTree = "<group>"; };
+		B56836A823CF735F00073EB4 /* URLSession+Synchronous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Synchronous.swift"; sourceTree = "<group>"; };
+		B56836AA23CF738200073EB4 /* URLRequestExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestExecuter.swift; sourceTree = "<group>"; };
+		B56836AC23CF739700073EB4 /* URLSessionRequestExecuter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionRequestExecuter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		B568368123CF70C900073EB4 /* NetworkManager */ = {
 			isa = PBXGroup;
 			children = (
+				B56836A723CF735200073EB4 /* URL */,
 				B56836A423CF731C00073EB4 /* Request Config */,
 				B568369C23CF70F900073EB4 /* Encoder */,
 				B568369923CF70DE00073EB4 /* Interceptor */,
@@ -123,6 +130,16 @@
 				B56836A523CF732700073EB4 /* RequestConfig.swift */,
 			);
 			path = "Request Config";
+			sourceTree = "<group>";
+		};
+		B56836A723CF735200073EB4 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				B56836A823CF735F00073EB4 /* URLSession+Synchronous.swift */,
+				B56836AA23CF738200073EB4 /* URLRequestExecuter.swift */,
+				B56836AC23CF739700073EB4 /* URLSessionRequestExecuter.swift */,
+			);
+			path = URL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,11 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56836A923CF735F00073EB4 /* URLSession+Synchronous.swift in Sources */,
 				B56836A623CF732700073EB4 /* RequestConfig.swift in Sources */,
 				B56836A323CF717C00073EB4 /* URLParameterEncoder.swift in Sources */,
 				B568369F23CF714000073EB4 /* ParameterEncoder.swift in Sources */,
+				B56836AB23CF738200073EB4 /* URLRequestExecuter.swift in Sources */,
 				B568369B23CF70E800073EB4 /* Interceptor.swift in Sources */,
 				B56836A123CF716600073EB4 /* JSONParameterEncoder.swift in Sources */,
+				B56836AD23CF739700073EB4 /* URLSessionRequestExecuter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
