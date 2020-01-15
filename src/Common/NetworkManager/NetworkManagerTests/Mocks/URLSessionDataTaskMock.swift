@@ -13,4 +13,6 @@ class URLSessionDataTaskMock: URLSessionDataTask {
     override func resume() {
         self.resumeIsCalled = true
     }
+    
+    override init() {}
 }

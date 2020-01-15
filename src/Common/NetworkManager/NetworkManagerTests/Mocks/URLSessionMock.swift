@@ -19,4 +19,6 @@ class URLSessionMock: URLSession {
         completionHandler(nextData, nextResponse, nextError)
         return nextDataTask
     }
+    
+    override init() {}
 }

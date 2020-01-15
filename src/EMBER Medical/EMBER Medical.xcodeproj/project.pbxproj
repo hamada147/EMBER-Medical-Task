@@ -18,6 +18,10 @@
 		B568366A23CE217500073EB4 /* EMBER_MedicalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568366923CE217500073EB4 /* EMBER_MedicalTests.swift */; };
 		B56836B223CF757D00073EB4 /* NetworkManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56836B123CF757D00073EB4 /* NetworkManager.framework */; };
 		B56836B323CF757D00073EB4 /* NetworkManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B56836B123CF757D00073EB4 /* NetworkManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B568370F23CF805A00073EB4 /* APIManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568370E23CF805A00073EB4 /* APIManager.framework */; };
+		B568371023CF805A00073EB4 /* APIManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B568370E23CF805A00073EB4 /* APIManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B568371223CF806100073EB4 /* Obfuscator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B568371123CF806100073EB4 /* Obfuscator.framework */; };
+		B568371323CF806100073EB4 /* Obfuscator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B568371123CF806100073EB4 /* Obfuscator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA1269284140873255844B77 /* Pods_EMBER_Medical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4C6864FCA7D7330C42C091 /* Pods_EMBER_Medical.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +42,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				B568371323CF806100073EB4 /* Obfuscator.framework in Embed Frameworks */,
 				B56836B323CF757D00073EB4 /* NetworkManager.framework in Embed Frameworks */,
+				B568371023CF805A00073EB4 /* APIManager.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +70,8 @@
 		B568366B23CE217500073EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B568367423CE21B200073EB4 /* EMBER Medical.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "EMBER Medical.entitlements"; sourceTree = "<group>"; };
 		B56836B123CF757D00073EB4 /* NetworkManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B568370E23CF805A00073EB4 /* APIManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = APIManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B568371123CF806100073EB4 /* Obfuscator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Obfuscator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B803F694855A65D4AF7C8E /* Pods-EMBER MedicalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMBER MedicalTests.release.xcconfig"; path = "Target Support Files/Pods-EMBER MedicalTests/Pods-EMBER MedicalTests.release.xcconfig"; sourceTree = "<group>"; };
 		F9DF509BA11A1255CD3267A6 /* Pods-EMBER Medical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMBER Medical.debug.xcconfig"; path = "Target Support Files/Pods-EMBER Medical/Pods-EMBER Medical.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,8 +81,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B568371223CF806100073EB4 /* Obfuscator.framework in Frameworks */,
 				EA1269284140873255844B77 /* Pods_EMBER_Medical.framework in Frameworks */,
 				B56836B223CF757D00073EB4 /* NetworkManager.framework in Frameworks */,
+				B568370F23CF805A00073EB4 /* APIManager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +158,8 @@
 		C33FD6B813B10BDB2F25D4B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B568371123CF806100073EB4 /* Obfuscator.framework */,
+				B568370E23CF805A00073EB4 /* APIManager.framework */,
 				B56836B123CF757D00073EB4 /* NetworkManager.framework */,
 				0E4C6864FCA7D7330C42C091 /* Pods_EMBER_Medical.framework */,
 				560DAB72A434E404E0FE83D5 /* Pods_EMBER_MedicalTests.framework */,
