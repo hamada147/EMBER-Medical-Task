@@ -24,7 +24,7 @@ public struct InAPPError: Codable, Equatable {
         self.errorMessage = errorMessage
     }
     
-    public static func == (lhs: InAPPError, rhs: InAPPError) -> Bool{
+    public static func == (lhs: InAPPError, rhs: InAPPError) -> Bool {
         if (lhs.errorCode == rhs.errorCode && lhs.subErrorCode == rhs.subErrorCode && lhs.errorMessage == rhs.errorMessage) {
             return true
         } else {

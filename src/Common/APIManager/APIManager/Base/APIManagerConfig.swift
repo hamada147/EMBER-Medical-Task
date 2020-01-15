@@ -21,4 +21,8 @@ public class APIManagerConfig {
         let obf = Obfuscator()
         return obf.reveal(key: key)
     }
+    
+    public static var apiDateFormat: String {
+        return "yyyy/mm/dd"
+    }
 }

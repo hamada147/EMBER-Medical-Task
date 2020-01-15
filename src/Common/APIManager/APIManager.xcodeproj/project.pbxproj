@@ -20,6 +20,15 @@
 		B568371C23CF8DBE00073EB4 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568371B23CF8DBE00073EB4 /* URLSessionDataTaskMock.swift */; };
 		B568371E23CF8DDA00073EB4 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568371D23CF8DDA00073EB4 /* MockAPI.swift */; };
 		B568372223CF8EDF00073EB4 /* EmptyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568372123CF8EDF00073EB4 /* EmptyDTO.swift */; };
+		B568372523CF98BB00073EB4 /* APIErrorDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568372423CF98BB00073EB4 /* APIErrorDTO.swift */; };
+		B568372723CF9CF100073EB4 /* GetSourcesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568372623CF9CF100073EB4 /* GetSourcesAPI.swift */; };
+		B568372923CF9D0200073EB4 /* SourcesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568372823CF9D0200073EB4 /* SourcesResponse.swift */; };
+		B568372B23CF9F5000073EB4 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568372A23CF9F5000073EB4 /* Category.swift */; };
+		B568372D23CF9F6200073EB4 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568372C23CF9F6200073EB4 /* Source.swift */; };
+		B568372F23CF9FC100073EB4 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568372E23CF9FC100073EB4 /* BaseResponse.swift */; };
+		B568373123CFA3BB00073EB4 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568373023CFA3BB00073EB4 /* Language.swift */; };
+		B568373323CFAB7C00073EB4 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568373223CFAB7C00073EB4 /* Country.swift */; };
+		B568373523CFAE5200073EB4 /* GetTopHeadlines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B568373423CFAE5200073EB4 /* GetTopHeadlines.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		B568371B23CF8DBE00073EB4 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
 		B568371D23CF8DDA00073EB4 /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		B568372123CF8EDF00073EB4 /* EmptyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDTO.swift; sourceTree = "<group>"; };
+		B568372423CF98BB00073EB4 /* APIErrorDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorDTO.swift; sourceTree = "<group>"; };
+		B568372623CF9CF100073EB4 /* GetSourcesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSourcesAPI.swift; sourceTree = "<group>"; };
+		B568372823CF9D0200073EB4 /* SourcesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesResponse.swift; sourceTree = "<group>"; };
+		B568372A23CF9F5000073EB4 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B568372C23CF9F6200073EB4 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		B568372E23CF9FC100073EB4 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		B568373023CFA3BB00073EB4 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		B568373223CFAB7C00073EB4 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		B568373423CFAE5200073EB4 /* GetTopHeadlines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTopHeadlines.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +109,7 @@
 		B56836C623CF76AA00073EB4 /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				B568372323CF979000073EB4 /* APIs */,
 				B56836DF23CF799600073EB4 /* DTO */,
 				B56836DE23CF795300073EB4 /* Base */,
 				B56836C723CF76AA00073EB4 /* APIManager.h */,
@@ -126,6 +145,11 @@
 			children = (
 				B56836E023CF79AB00073EB4 /* InAPPError.swift */,
 				B568372123CF8EDF00073EB4 /* EmptyDTO.swift */,
+				B568372423CF98BB00073EB4 /* APIErrorDTO.swift */,
+				B568372A23CF9F5000073EB4 /* Category.swift */,
+				B568373223CFAB7C00073EB4 /* Country.swift */,
+				B568373023CFA3BB00073EB4 /* Language.swift */,
+				B568372C23CF9F6200073EB4 /* Source.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -138,6 +162,33 @@
 				B568371D23CF8DDA00073EB4 /* MockAPI.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		B568372323CF979000073EB4 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				B568373723CFAF1200073EB4 /* Base */,
+				B568373623CFAF0500073EB4 /* GetSources */,
+				B568373423CFAE5200073EB4 /* GetTopHeadlines.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		B568373623CFAF0500073EB4 /* GetSources */ = {
+			isa = PBXGroup;
+			children = (
+				B568372623CF9CF100073EB4 /* GetSourcesAPI.swift */,
+				B568372823CF9D0200073EB4 /* SourcesResponse.swift */,
+			);
+			path = GetSources;
+			sourceTree = "<group>";
+		};
+		B568373723CFAF1200073EB4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B568372E23CF9FC100073EB4 /* BaseResponse.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,13 +301,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B568373523CFAE5200073EB4 /* GetTopHeadlines.swift in Sources */,
+				B568372723CF9CF100073EB4 /* GetSourcesAPI.swift in Sources */,
 				B568372223CF8EDF00073EB4 /* EmptyDTO.swift in Sources */,
 				B568371723CF8C2B00073EB4 /* ErrorManager.swift in Sources */,
+				B568373123CFA3BB00073EB4 /* Language.swift in Sources */,
 				B56836E723CF7A3200073EB4 /* APIManagerConfig.swift in Sources */,
 				B56836E323CF79D300073EB4 /* APIProtocol.swift in Sources */,
 				B56836E523CF7A0E00073EB4 /* Encodable+Dictionary.swift in Sources */,
 				B56836E123CF79AB00073EB4 /* InAPPError.swift in Sources */,
 				B568371523CF890D00073EB4 /* BaseAPI.swift in Sources */,
+				B568372D23CF9F6200073EB4 /* Source.swift in Sources */,
+				B568372523CF98BB00073EB4 /* APIErrorDTO.swift in Sources */,
+				B568372923CF9D0200073EB4 /* SourcesResponse.swift in Sources */,
+				B568372B23CF9F5000073EB4 /* Category.swift in Sources */,
+				B568373323CFAB7C00073EB4 /* Country.swift in Sources */,
+				B568372F23CF9FC100073EB4 /* BaseResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
