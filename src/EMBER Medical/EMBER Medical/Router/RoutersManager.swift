@@ -20,8 +20,9 @@ public class RoutersManager {
     // MARK:- Activite Router
     public static func activateRouter(routerType: RouterType, parentView: UIViewController?) {
         switch routerType {
-        default:
-            return
+        case .News:
+            RoutersManager.activeRouter = NewsRouter(parentView: parentView)
+            self.activeRouter!.start()
         }
     }
 }

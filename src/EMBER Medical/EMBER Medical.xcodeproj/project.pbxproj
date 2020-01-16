@@ -29,6 +29,13 @@
 		B56AE34F23CFC1800092C98B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE34E23CFC1800092C98B /* BaseViewController.swift */; };
 		B56AE35123CFC1C10092C98B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE35023CFC1C10092C98B /* BaseViewModel.swift */; };
 		B56AE35323CFC1DA0092C98B /* ErrorNotificationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56AE35223CFC1DA0092C98B /* ErrorNotificationViewController.xib */; };
+		B56AE35623CFC4120092C98B /* NewsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE35523CFC4120092C98B /* NewsRouter.swift */; };
+		B56AE35823CFC5EF0092C98B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE35723CFC5EF0092C98B /* AppConfig.swift */; };
+		B56AE35D23CFC8680092C98B /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE35B23CFC8680092C98B /* NewsListViewController.swift */; };
+		B56AE35E23CFC8680092C98B /* NewsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56AE35C23CFC8680092C98B /* NewsListViewController.xib */; };
+		B56AE36023CFC88C0092C98B /* NewsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE35F23CFC88C0092C98B /* NewsListViewModel.swift */; };
+		B56AE36423D053CC0092C98B /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56AE36223D053CB0092C98B /* NewsTableViewCell.swift */; };
+		B56AE36523D053CC0092C98B /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B56AE36323D053CB0092C98B /* NewsTableViewCell.xib */; };
 		EA1269284140873255844B77 /* Pods_EMBER_Medical.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E4C6864FCA7D7330C42C091 /* Pods_EMBER_Medical.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +93,13 @@
 		B56AE34E23CFC1800092C98B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		B56AE35023CFC1C10092C98B /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		B56AE35223CFC1DA0092C98B /* ErrorNotificationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorNotificationViewController.xib; sourceTree = "<group>"; };
+		B56AE35523CFC4120092C98B /* NewsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRouter.swift; sourceTree = "<group>"; };
+		B56AE35723CFC5EF0092C98B /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		B56AE35B23CFC8680092C98B /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		B56AE35C23CFC8680092C98B /* NewsListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsListViewController.xib; sourceTree = "<group>"; };
+		B56AE35F23CFC88C0092C98B /* NewsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewModel.swift; sourceTree = "<group>"; };
+		B56AE36223D053CB0092C98B /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		B56AE36323D053CB0092C98B /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		C4B803F694855A65D4AF7C8E /* Pods-EMBER MedicalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMBER MedicalTests.release.xcconfig"; path = "Target Support Files/Pods-EMBER MedicalTests/Pods-EMBER MedicalTests.release.xcconfig"; sourceTree = "<group>"; };
 		F9DF509BA11A1255CD3267A6 /* Pods-EMBER Medical.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMBER Medical.debug.xcconfig"; path = "Target Support Files/Pods-EMBER Medical/Pods-EMBER Medical.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +167,7 @@
 				B568367423CE21B200073EB4 /* EMBER Medical.entitlements */,
 				B568364F23CE217100073EB4 /* AppDelegate.swift */,
 				B568365123CE217100073EB4 /* SceneDelegate.swift */,
+				B56AE35723CFC5EF0092C98B /* AppConfig.swift */,
 				B568365323CE217100073EB4 /* ViewController.swift */,
 				B568365523CE217100073EB4 /* Main.storyboard */,
 				B568365B23CE217400073EB4 /* Assets.xcassets */,
@@ -193,6 +208,7 @@
 		B56AE34623CFC1000092C98B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B56AE35423CFC4030092C98B /* News */,
 				B56AE34723CFC1080092C98B /* Common */,
 			);
 			path = Screens;
@@ -222,6 +238,43 @@
 				B56AE35223CFC1DA0092C98B /* ErrorNotificationViewController.xib */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		B56AE35423CFC4030092C98B /* News */ = {
+			isa = PBXGroup;
+			children = (
+				B56AE35923CFC8300092C98B /* NewsList */,
+				B56AE35523CFC4120092C98B /* NewsRouter.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		B56AE35923CFC8300092C98B /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				B56AE35A23CFC8390092C98B /* views */,
+				B56AE35F23CFC88C0092C98B /* NewsListViewModel.swift */,
+			);
+			path = NewsList;
+			sourceTree = "<group>";
+		};
+		B56AE35A23CFC8390092C98B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B56AE36123D053B00092C98B /* cells */,
+				B56AE35B23CFC8680092C98B /* NewsListViewController.swift */,
+				B56AE35C23CFC8680092C98B /* NewsListViewController.xib */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B56AE36123D053B00092C98B /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				B56AE36223D053CB0092C98B /* NewsTableViewCell.swift */,
+				B56AE36323D053CB0092C98B /* NewsTableViewCell.xib */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 		C33FD6B813B10BDB2F25D4B8 /* Frameworks */ = {
@@ -322,7 +375,9 @@
 			files = (
 				B56AE35323CFC1DA0092C98B /* ErrorNotificationViewController.xib in Resources */,
 				B568365F23CE217400073EB4 /* LaunchScreen.storyboard in Resources */,
+				B56AE35E23CFC8680092C98B /* NewsListViewController.xib in Resources */,
 				B568365C23CE217400073EB4 /* Assets.xcassets in Resources */,
+				B56AE36523D053CC0092C98B /* NewsTableViewCell.xib in Resources */,
 				B568365723CE217100073EB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,6 +443,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56AE35623CFC4120092C98B /* NewsRouter.swift in Sources */,
+				B56AE36023CFC88C0092C98B /* NewsListViewModel.swift in Sources */,
+				B56AE36423D053CC0092C98B /* NewsTableViewCell.swift in Sources */,
 				B56AE34D23CFC1540092C98B /* ErrorNotificationViewModel.swift in Sources */,
 				B56AE35123CFC1C10092C98B /* BaseViewModel.swift in Sources */,
 				B56AE34023CFBFD90092C98B /* RoutersManager.swift in Sources */,
@@ -396,8 +454,10 @@
 				B56AE34B23CFC1200092C98B /* ErrorNotificationViewController.swift in Sources */,
 				B56AE34F23CFC1800092C98B /* BaseViewController.swift in Sources */,
 				B568365223CE217100073EB4 /* SceneDelegate.swift in Sources */,
+				B56AE35823CFC5EF0092C98B /* AppConfig.swift in Sources */,
 				B56AE34223CFC01D0092C98B /* Router.swift in Sources */,
 				B568365A23CE217100073EB4 /* EMBER_Medical.xcdatamodeld in Sources */,
+				B56AE35D23CFC8680092C98B /* NewsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
